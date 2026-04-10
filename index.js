@@ -44,7 +44,7 @@ app.post('/api/capture-lead', async (req, res) => {
 
     // Send the email
     await transporter.sendMail({
-      from: `"Intelices Voice Agent" <${process.env.GMAIL_USER}>`,
+      from: `"Dharampal" <${process.env.GMAIL_USER}>`,
       to: process.env.SUPPORT_EMAIL,
       subject: `New lead captured: ${name}`,
       html: `
